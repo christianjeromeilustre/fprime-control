@@ -59,6 +59,10 @@ TEST(TestLogging, OnOff) {
 // Test Health
 // ----------------------------------------------------------------------
 
+TEST(TestHealth, Ping) {
+  Svc::Health::Tester tester;
+  tester.Ping();
+}
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
