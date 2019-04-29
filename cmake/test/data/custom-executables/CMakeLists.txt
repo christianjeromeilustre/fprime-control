@@ -43,7 +43,7 @@ include("${CMAKE_CURRENT_LIST_DIR}/../../../FPrime.cmake")
 #message(STATUS "F´ BUILD_ROOT currently set to: ${FPRIME_CURRENT_BUILD_ROOT}")
 
 set(SOURCE_FILES
-  "${CMAKE_CURRENT_LIST_DIR}/Main.cpp"  
+  "${CMAKE_CURRENT_LIST_DIR}/main.cpp"  
 )
 # Note: supply non-explicit dependencies here
 set(MOD_DEPS
