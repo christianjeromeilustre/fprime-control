@@ -2,12 +2,12 @@
 #define TESTER_HPP
 
 #include "GTestBase.hpp"
-#include "Autocoders/Python/test/testgen/TestComponentComponentImpl.hpp"
+#include "Autocoders/Python/test/testgen/test/ut/MathSenderComponentImpl.hpp"
 
-namespace TestGen {
+namespace Ref {
 
   class Tester :
-    public TestComponentGTestBase
+    public MathSenderGTestBase
   {
 
       // ----------------------------------------------------------------------
@@ -37,6 +37,21 @@ namespace TestGen {
     private:
 
       // ----------------------------------------------------------------------
+      // Handlers for typed from ports
+      // ----------------------------------------------------------------------
+
+      //! Handler for from_mathOut
+      //!
+      void from_mathOut_handler(
+          const NATIVE_INT_TYPE portNum, /*!< The port number*/
+          F32 val1, 
+          F32 val2, 
+          MathOperation operation /*!< operation argument*/
+      );
+
+    private:
+
+      // ----------------------------------------------------------------------
       // Helper methods
       // ----------------------------------------------------------------------
 
@@ -56,10 +71,10 @@ namespace TestGen {
 
       //! The component under test
       //!
-      TestComponentComponentImpl component;
+      MathSenderComponentImpl component;
 
   };
 
-} // end namespace TestGen
+} // end namespace Ref
 
 #endif
