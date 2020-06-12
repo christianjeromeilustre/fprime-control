@@ -1,13 +1,11 @@
 """
-Handles getting events from the GDS based on some user-specified criteria
+Handles executing the "events" CLI command for the GDS
 """
 
-import json
 import types
 from typing import List
 
 from fprime_gds.common.gds_cli.base_commands import QueryHistoryCommand
-import fprime_gds.common.gds_cli.filtering_utils as filtering_utils
 import fprime_gds.common.gds_cli.misc_utils as misc_utils
 import fprime_gds.common.gds_cli.test_api_utils as test_api_utils
 
@@ -18,7 +16,7 @@ from fprime_gds.common.testing_fw import predicates
 
 # TODO: Need to do user tests to find a better print format
 # TODO: Just put inside the below class?
-def get_event_string(event, as_json: bool = False) -> str:
+def get_event_string(event: EventData, as_json: bool = False) -> str:
     """
     Takes in the given event object and prints out a human-readable string
     representation of its information.
@@ -75,7 +73,11 @@ class EventsCommand(QueryHistoryCommand):
         """
         Prints out the next upcoming event information after the given time
         that matches the given filter (in a way usable by the
-        "repeat_until_interrupt" function)
+        "repeat_until_interrupt" function).
+
+        # TODO: Possibly move this implementation to the base class? Not sure if
+        # other query commands will do anything significantly different besides
+        # different print/event-getting functions
         """
         event_object = test_api_utils.get_upcoming_event(
             api, filter_predicate, min_start_time
