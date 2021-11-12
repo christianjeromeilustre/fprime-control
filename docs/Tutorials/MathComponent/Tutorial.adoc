@@ -15,7 +15,7 @@ See the diagram below.
 
 [#math-top]
 .A simple topology for arithmetic computation
-image::img/top.png[Math Sender and Math Receiver]
+image::png/top.png[Math Sender and Math Receiver]
 
 *What is covered:* The tutorial covers the following concepts:
 
