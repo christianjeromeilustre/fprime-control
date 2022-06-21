@@ -51,9 +51,9 @@ namespace Svc {
 
           //! Construct an Interface
           Interface(
-              FramingTester& framingChecker //!< The enclosing FramingTester
+              FramingTester& framingTester //!< The enclosing FramingTester
           ) :
-            framingChecker(framingChecker),
+            framingTester(framingTester),
             sentBuffer(nullptr)
           {
 
@@ -64,7 +64,7 @@ namespace Svc {
           //! Allocate the buffer
           Fw::Buffer allocate(const U32 size) {
             FW_ASSERT(size <= MAX_BUFFER_SIZE);
-            Fw::Buffer buffer(this->framingChecker.bufferStorage, size);
+            Fw::Buffer buffer(this->framingTester.bufferStorage, size);
             return buffer;
           }
 
@@ -81,7 +81,7 @@ namespace Svc {
         private:
 
           //! The enclosing FramingTester
-          FramingTester& framingChecker;
+          FramingTester& framingTester;
 
           //! The sent buffer
           Fw::Buffer *sentBuffer;
@@ -94,7 +94,7 @@ namespace Svc {
       // Construction
       // ----------------------------------------------------------------------
 
-      //! Construct a framing checker
+      //! Construct a FramingTester
       FramingTester(
           Fw::ComPacket::ComPacketType packetType //!< The packet type
       );
