@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "artifact": "sdd",
+  "generated_at": "2026-11-16T21:39:03Z",
+  "ref": "devel",
+  "commit": "cf3b92e5fedd26b9dba90a752785b80868126224",
+  "tier": "gold",
+  "has_sdd": true,
+  "sections": 38,
+  "filled_sections": 20,
+  "prose_words": 1913,
+  "placeholder_hits": 2,
+  "table_kinds": [
+    "data_products",
+    "ports"
+  ],
+  "declared_kinds": [
+    "commands",
+    "events",
+    "ports",
+    "telemetry"
+  ],
+  "rendered_url": "https://fprime.jpl.nasa.gov/devel/Svc/CmdSequencer/docs/sdd/",
+  "doxygen": [
+    {
+      "name": "Svc::CmdSequencerComponentImpl",
+      "url": "https://fprime.jpl.nasa.gov/devel/docs/reference/api/cpp/html/class_svc_1_1_cmd_sequencer_component_impl.html"
+    }
+  ]
+}
