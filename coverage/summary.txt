@@ -13,7 +13,7 @@ Drv/AsyncByteStreamBufferAdapter/AsyncByteStreamBufferAdapter.cpp
                                               26      26   100%
 Drv/ByteStreamBufferAdapter/ByteStreamBufferAdapter.cpp
                                               24      24   100%
-Drv/Ip/IpSocket.cpp                          108      98    90%   65,105,142,154,173,216-217,223,240,244
+Drv/Ip/IpSocket.cpp                          108      97    89%   65,105,142,154,173,216-217,222-223,240,244
 Drv/Ip/IpSocket.hpp                            1       1   100%
 Drv/Ip/SocketComponentHelper.cpp             223     204    91%   62,81-82,121,139-141,148,199,241-242,296,318-320,360,375-376,379
 Drv/Ip/TcpClientSocket.cpp                    33      24    72%   35,50-51,55-56,61-62,67-68
@@ -137,7 +137,7 @@ googletest/googletest/include/gtest/gtest-printers.h
 googletest/googletest/include/gtest/gtest-test-part.h
                                                1       1   100%
 googletest/googletest/include/gtest/gtest.h
-                                              47      27    57%   244,252,257-258,339,1338,1343,1407,1411-1413,1555-1557,1559-1561,1565-1566,1663
+                                              47      26    55%   244,252,257-258,339,1338,1343,1362,1407,1411-1413,1555-1557,1559-1561,1565-1566,1663
 googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
                                                6       4    66%   95-96
 googletest/googletest/include/gtest/internal/gtest-internal.h
@@ -174,7 +174,7 @@ Os/Generic/PriorityMemQueue.cpp              352     319    90%   79-80,110-111,
 Os/Generic/PriorityMemQueue.hpp                7       7   100%
 Os/Generic/PriorityQueue.cpp                 166     139    83%   77,79-80,90-91,93-95,107-109,111-114,124-127,129-133,193,262-263
 Os/Generic/PriorityQueue.hpp                   1       1   100%
-Os/Generic/Types/AtomicQueue.cpp             169     156    92%   21-26,28,248-249,253,318,343,346
+Os/Generic/Types/AtomicQueue.cpp             169     156    92%   21-26,28,194,248-249,253,318,346
 Os/Generic/Types/AtomicQueue.hpp               4       4   100%
 Os/Generic/Types/MaxHeap.cpp                 107     107   100%
 Os/IntervalTimer.cpp                          15      14    93%   26
@@ -207,7 +207,7 @@ Os/Posix/File.hpp                              2       2   100%
 Os/Posix/FileSystem.cpp                       57      50    87%   50,58,79,88,94,102-103
 Os/Posix/FileSystem.hpp                        2       2   100%
 Os/Posix/Mutex.cpp                            23      23   100%
-Os/Posix/RawTime.cpp                          44      41    93%   64,76,80
+Os/Posix/RawTime.cpp                          44      39    88%   49-50,64,76,80
 Os/Posix/RawTime.hpp                           1       1   100%
 Os/Posix/Task.cpp                            156     105    67%   45-47,51,55-58,60-61,63-64,68-69,71-72,75-77,87-89,93-95,135-136,141,143-146,149-150,155,184,196,243,251,265-267,269-271,290-292,296-297,299
 Os/Posix/Task.hpp                              2       2   100%
@@ -449,5 +449,5 @@ Utils/TokenBucket.cpp                         54      54   100%
 Utils/Types/CircularBuffer.cpp               146     128    87%   87,89-93,95-96,179,181-184,186-190
 Utils/Types/Queue.cpp                        104      95    91%   48,54,74,80,121,143,148,189-190
 ------------------------------------------------------------------------------
-TOTAL                                      26750   22990    85%
+TOTAL                                      26750   22986    85%
 ------------------------------------------------------------------------------
