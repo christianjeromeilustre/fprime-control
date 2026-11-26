@@ -3,7 +3,7 @@
   "ref": "devel",
   "ref_type": "branch",
   "commit": "cf3b92e5fedd26b9dba90a752785b80868126224",
-  "generated_at": "2026-11-26T21:54:09Z",
+  "generated_at": "2026-11-26T22:04:38Z",
   "thresholds": {
     "platinum": 95.0,
     "gold": 90.0,
@@ -11,10 +11,10 @@
   },
   "overall": {
     "line_pct": 85.93,
-    "line_covered": 22987,
+    "line_covered": 22986,
     "line_total": 26750,
-    "function_pct": 64.23,
-    "function_covered": 7770,
+    "function_pct": 64.24,
+    "function_covered": 7772,
     "function_total": 12098,
     "branch_pct": 76.49,
     "branch_covered": 13775,
@@ -3192,14 +3192,14 @@
       "has_ut": true,
       "has_coverage": true,
       "ut": {
-        "line_pct": 97.96,
-        "line_covered": 1102,
+        "line_pct": 97.33,
+        "line_covered": 1095,
         "line_total": 1125,
         "function_pct": 97.14,
         "function_covered": 509,
         "function_total": 524,
-        "branch_pct": 82.66,
-        "branch_covered": 453,
+        "branch_pct": 81.57,
+        "branch_covered": 447,
         "branch_total": 548,
         "report": "Fw/DataStructures/coverage/index.html",
         "tier": "platinum"
@@ -4585,8 +4585,8 @@
       "has_ut": true,
       "has_coverage": true,
       "ut": {
-        "line_pct": 89.98,
-        "line_covered": 916,
+        "line_pct": 90.28,
+        "line_covered": 919,
         "line_total": 1018,
         "function_pct": 89.13,
         "function_covered": 82,
@@ -4595,7 +4595,7 @@
         "branch_covered": 396,
         "branch_total": 526,
         "report": "Os/Generic/coverage/index.html",
-        "tier": "silver"
+        "tier": "gold"
       },
       "int": null,
       "codeql": {
@@ -4652,7 +4652,7 @@
       },
       "tiers": {
         "overall": "bronze",
-        "ut": "silver",
+        "ut": "gold",
         "int": null,
         "codeql": "bronze",
         "checks": "bronze",
@@ -4664,14 +4664,14 @@
       "has_ut": true,
       "has_coverage": true,
       "ut": {
-        "line_pct": 92.14,
-        "line_covered": 258,
+        "line_pct": 91.79,
+        "line_covered": 257,
         "line_total": 280,
         "function_pct": 92.86,
         "function_covered": 26,
         "function_total": 28,
-        "branch_pct": 75.7,
-        "branch_covered": 81,
+        "branch_pct": 72.9,
+        "branch_covered": 78,
         "branch_total": 107,
         "report": "Os/Generic/Types/coverage/index.html",
         "tier": "gold"
